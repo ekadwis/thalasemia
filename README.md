@@ -1,68 +1,61 @@
-# CodeIgniter 4 Application Starter
+# Thalasemia - Bersama untuk Kehidupan
 
-## What is CodeIgniter?
+**Selamat Datang di Thalasemia - Bersama untuk Kehidupan!**  
+Bergabunglah menjadi pahlawan sejati dengan mendonorkan darah Anda. Setiap tetes darah yang Anda sumbangkan bisa menyelamatkan nyawa seseorang. Di **[Nama Website]**, kami menghubungkan pendonor darah dengan mereka yang membutuhkan, menciptakan komunitas yang peduli dan siap membantu.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## Mengapa Donor Darah?
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+### 1. **Menyelamatkan Nyawa**
+Setiap kali Anda mendonorkan darah, Anda dapat membantu menyelamatkan tiga orang yang membutuhkan transfusi. Kontribusi Anda bisa menjadi harapan hidup bagi mereka yang sangat membutuhkan.
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+### 2. **Kesehatan Pendonor**
+Donor darah secara rutin dapat membantu menjaga kesehatan jantung Anda dan menurunkan risiko beberapa penyakit, termasuk kanker. Jadi, selain membantu orang lain, Anda juga berkontribusi untuk menjaga kesehatan diri Anda.
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+### 3. **Kepedulian Sosial**
+Dengan berpartisipasi dalam kegiatan donor darah, Anda ikut memperkuat solidaritas dan rasa kepedulian terhadap sesama. Anda bukan hanya mendonorkan darah, tetapi juga menjadi bagian dari gerakan kebaikan yang lebih besar.
 
-## Installation & updates
+## Fitur Utama
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+- **Pendaftaran Pendonor**: Sistem pendaftaran yang memudahkan individu untuk menjadi pendonor darah.
+- **Pencarian Donor Darah**: Memudahkan pengguna yang membutuhkan darah untuk mencari pendonor yang tersedia.
+- **Informasi Donor Darah**: Memberikan informasi yang jelas tentang pentingnya donor darah dan manfaat bagi kesehatan.
+- **Statistik dan Tracking**: Menyediakan data dan statistik tentang donor darah yang sudah dilakukan dan yang dibutuhkan.
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+## Teknologi yang Digunakan
 
-## Setup
+- **CodeIgniter 4**: Framework PHP modern yang digunakan untuk membangun aplikasi web yang cepat dan aman.
+- **Bootstrap 5**: Framework CSS untuk membangun antarmuka pengguna responsif yang elegan.
+- **MySQL**: Database relational untuk menyimpan data donor darah dan pengguna.
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+## Instalasi
 
-## Important Change with index.php
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/username/thalasemia.git
+   ```
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+2. **Konfigurasi Database**
+   - Buat database MySQL baru dan sesuaikan pengaturan database pada file `app/config/Database.php`.
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+3. **Install Dependencies**
+   - Pastikan Anda telah menginstal Composer di sistem Anda, kemudian jalankan:
+   ```bash
+   composer install
+   ```
 
-**Please** read the user guide for a better explanation of how CI4 works!
+4. **Jalankan Aplikasi**
+   - Anda dapat menjalankan aplikasi menggunakan server lokal seperti XAMPP atau server PHP built-in:
+   ```bash
+   php spark serve
+   ```
 
-## Repository Management
+5. **Akses Aplikasi**
+   - Akses aplikasi di browser Anda melalui `http://localhost:8080`.
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+## Kontributor
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+- [@ekadwis](https://github.com/ekadwis)
 
-## Server Requirements
+## Lisensi
 
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> The end of life date for PHP 7.4 was November 28, 2022.
-> The end of life date for PHP 8.0 was November 26, 2023.
-> If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> The end of life date for PHP 8.1 will be November 25, 2024.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+Proyek ini dilisensikan di bawah [MIT License](LICENSE).
